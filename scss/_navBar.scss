@@ -1,0 +1,72 @@
+//nesting - anidacion
+
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: $mainColor;
+	img{
+		width: 250px;
+		@media(min-width: 280px) and (max-width: 320px){
+			width: 150px;
+		}
+	}
+	ul{
+		display: flex;
+		li{
+			list-style: none;
+			a{
+				color: $secondaryColor;
+				font-size: $textMd;
+				text-decoration: none;
+				font-family: $mainFont;
+				&:hover{
+					color: $black;
+					text-decoration: underline;
+					cursor: pointer;
+					font-size: $textLg;
+				}
+			}
+		}
+	}
+
+}
+
+//REUTILIZANDO LO DEL CSS
+
+.nav{
+	background-color: rgba(56, 56, 56, 1);
+	padding: 4px 20px ;
+	position: sticky;
+	top: 0;
+	display: flex;
+	animation-name: imgAlpha;
+	animation-duration: .5s;
+	ul{
+
+	}
+		li{
+			list-style: none;
+		}
+			a{
+				font-size: $textLg;
+				text-decoration: none;
+				color: $secondaryColor;
+				font-family: $mainFont;
+				font-weight: 900;
+				margin: 0 8px;
+			}
+}
+
+.main-nav{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	margin-left: auto;
+	margin-right: 2rem;
+	align-items: flex-end;
+}
+
+#color-navv{
+  color: $secondaryColor;
+}

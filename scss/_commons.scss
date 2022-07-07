@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+h1, h2, h3, h4, h5{
+	font-family: $mainFont;
+	font-size: $textXl;
+	color: $keycolor;
+}
+
+p{
+	font-size: $mainFont;
+	line-height: 1.4em;
+	color: $black;
+	font-size: $textMd;
+}
+
+//REUTILIZANDO CSS
+
+.bg-nav{
+	background-color: rgba(56, 56, 56, 1);
+}
+
+h1,h2,h3{
+		font-family: 'Joan', serif;
+		background: linear-gradient(to right,rgba(72,72,72,0), rgba(20,20,20,.5));
+		
+}

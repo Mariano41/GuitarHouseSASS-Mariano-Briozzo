@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Blaka&family=Joan&family=Roboto:wght@300;900&display=swap");
+.fontsize {
+  font-size: 2rem;
+  margin: 20px;
+  list-style: none; }
+
+.text-grey {
+  color: grey; }
+
+.text-red {
+  color: red; }
+
+.text-center {
+  text-align: center; }
+
+.text-white {
+  color: #1C1C1C;
+  font-style: normal;
+  color: #ffffff; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #383838; }
+  .nav img {
+    width: 250px; }
+    @media (min-width: 280px) and (max-width: 320px) {
+      .nav img {
+        width: 150px; } }
+  .nav ul {
+    display: flex; }
+    .nav ul li {
+      list-style: none; }
+      .nav ul li a {
+        color: #ffc655;
+        font-size: 1em;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif; }
+        .nav ul li a:hover {
+          color: #202020;
+          text-decoration: underline;
+          cursor: pointer;
+          font-size: 2em; }
+
+.nav {
+  background-color: #383838;
+  padding: 4px 20px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  animation-name: imgAlpha;
+  animation-duration: .5s; }
+  .nav li {
+    list-style: none; }
+  .nav a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #ffc655;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin: 0 8px; }
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: 2rem;
+  align-items: flex-end; }
+
+#color-navv {
+  color: #ffc655; }
+
+section img {
+  width: 100px; }
+
+.section-index {
+  padding: 50px;
+  justify-content: space-around; }
+
+.contenedor-selection {
+  display: flex;
+  justify-content: space-around; }
+
+footer img {
+  width: 25px; }
+
+.footer {
+  margin: 50px;
+  padding: 10px;
+  background-color: #ffc655;
+  display: flex;
+  justify-content: space-around; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3em;
+  color: black; }
+
+p {
+  font-size: "Roboto", sans-serif;
+  line-height: 1.4em;
+  color: #202020;
+  font-size: 1em; }
+
+.bg-nav {
+  background-color: #383838; }
+
+h1, h2, h3 {
+  font-family: 'Joan', serif;
+  background: linear-gradient(to right, rgba(72, 72, 72, 0), rgba(20, 20, 20, 0.5)); }

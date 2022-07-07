@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Blaka&family=Joan&family=Roboto:wght@300;900&display=swap');
+
+//vars fonts
+
+$mainFont: 'Roboto', sans-serif;
+
+
+//SIZES
+
+$textSm: 0.8em;
+$textMd: 1em;
+$textLg: 2em;
+$textXl: 3em;
+
+
+//REUTILIZANDO CSS
+
+.fontsize{
+	font-size: 2rem;
+	margin: 20px;
+	list-style: none;
+}
+
+.text-grey{
+	color: grey;
+}
+
+.text-red{
+	color: red;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+.text-white{
+	color: #1C1C1C;
+	font-style: normal;
+	color: #ffffff;
+}
