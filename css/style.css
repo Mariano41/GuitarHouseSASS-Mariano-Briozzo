@@ -82,6 +82,13 @@ section img {
   display: flex;
   justify-content: space-around; }
 
+.novedades_index {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border: solid black 2px;
+  background-color: #383838; }
+
 footer img {
   width: 25px; }
 
