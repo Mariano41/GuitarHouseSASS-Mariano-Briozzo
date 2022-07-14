@@ -2,13 +2,34 @@
 
 
 .nav{
-	@extend .nav;
-					&:hover{
+	display: flex;
+	justify-content: space-between;
+	background-color: $mainColor;
+	img{
+		width: 250px;
+		@media(min-width: 280px) and (max-width: 320px){
+			width: 150px;
+		}
+	}
+	ul{
+		display: flex;
+		li{
+			list-style: none;
+			a{
+				color: $secondaryColor;
+				font-size: $textMd;
+				text-decoration: none;
+				font-family: $mainFont;
+				&:hover{
 					color: $black;
 					text-decoration: underline;
 					cursor: pointer;
 					font-size: $textLg;
 				}
+			}
+		}
+	}
+
 }
 
 //REUTILIZANDO LO DEL CSS
