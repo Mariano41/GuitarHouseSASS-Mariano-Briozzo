@@ -26,21 +26,22 @@
     width: 250px; }
     @media (min-width: 280px) and (max-width: 320px) {
       .nav img {
-        width: 150px; } }
-  .nav ul {
-    display: flex; }
-    .nav ul li {
-      list-style: none; }
-      .nav ul li a {
-        color: #ffc655;
-        font-size: 1em;
-        text-decoration: none;
-        font-family: "Roboto", sans-serif; }
-        .nav ul li a:hover {
-          color: #202020;
-          text-decoration: underline;
-          cursor: pointer;
-          font-size: 2em; }
+        width: 150px; }
+        .nav img ul {
+          display: flex; }
+          .nav img ul li {
+            list-style: none; }
+            .nav img ul li a {
+              color: #ffc655;
+              font-size: 1em;
+              text-decoration: none;
+              font-family: "Roboto", sans-serif; } }
+
+.nav:hover {
+  color: #202020;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 2em; }
 
 .nav {
   background-color: #383838;
@@ -71,6 +72,29 @@
 #color-navv {
   color: #ffc655; }
 
+.botonera img {
+  width: 250px; }
+
+.nav-align {
+  float: right;
+  margin-top: 30px; }
+
+.text-center {
+  text-align: center; }
+
+.nav ul li a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3; }
+
+@keyframes imgAlpha {
+  from {
+    opacity: 0.2; }
+  to {
+    opacity: 1; } }
+
 section img {
   width: 100px; }
 
@@ -80,7 +104,13 @@ section img {
 
 .contenedor-selection {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  text-align: -webkit-center; }
+
+.publi-info {
+  display: flex;
+  justify-content: space-between;
+  width: 55%; }
 
 .novedades_index {
   width: 80%;
@@ -103,16 +133,22 @@ footer img {
   padding: 0;
   margin: 0; }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: "Roboto", sans-serif;
   font-size: 3em;
   color: black; }
 
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #3c3c3c;
+  font-size: 3em; }
+
 p {
-  font-size: "Roboto", sans-serif;
+  font-size: 1em;
   line-height: 1.4em;
   color: #202020;
-  font-size: 1em; }
+  padding: 4px;
+  font-style: "Roboto", sans-serif; }
 
 .bg-nav {
   background-color: #383838; }
@@ -120,3 +156,96 @@ p {
 h1, h2, h3 {
   font-family: 'Joan', serif;
   background: linear-gradient(to right, rgba(72, 72, 72, 0), rgba(20, 20, 20, 0.5)); }
+
+body {
+  background-image: url(../img/weback.jpg);
+  background-attachment: fixed;
+  min-height: 100%; }
+
+.novedades__nosotros {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.text-red {
+  color: red; }
+
+.fontsize {
+  font-size: 1em;
+  margin: 20px;
+  list-style: none; }
+
+.produ {
+  margin: 20px; }
+
+.productos .produ {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap; }
+  .productos .produ figure {
+    text-align: center; }
+    .productos .produ figure img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 200px; }
+      .productos .produ figure img:hover {
+        cursor: pointer;
+        width: 300px; }
+
+.grid-background {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas: 'nav nav' 'header header' 'main main' 'info imagen' 'section section' 'foot foot'; }
+
+.grid-gtryacc {
+  display: grid;
+  grid-template-columns: auto	auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "nav nav" "header header" "filtros productos" "foot foot"; }
+
+.nav {
+  grid-area: nav; }
+
+.header {
+  grid-area: header; }
+
+.filtros {
+  grid-area: filtros; }
+
+.productos {
+  grid-area: productos; }
+
+.main {
+  grid-area: main; }
+
+.section {
+  grid-area: section; }
+
+.foot {
+  grid-area: foot; }
+
+.infogrid {
+  grid-area: info; }
+
+.imagengrid {
+  grid-area: imagen; }
+
+@media only screen and (max-width: 640px) {
+  .grid-background {
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas: 'nav' 'header' 'main' 'info'  'imagen' 'section' 'foot'; }
+  .section {
+    display: flex;
+    flex-direction: column; } }
+
+@media only screen and (max-width: 530px) {
+  .grid-gtryacc {
+    grid-template-columns: repeat(1, auto);
+    grid-template-areas: "nav" "header" "filtros"  "productos" "foot"; }
+  .section {
+    display: flex; } }

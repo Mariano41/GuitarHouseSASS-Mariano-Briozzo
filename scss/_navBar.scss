@@ -2,34 +2,13 @@
 
 
 .nav{
-	display: flex;
-	justify-content: space-between;
-	background-color: $mainColor;
-	img{
-		width: 250px;
-		@media(min-width: 280px) and (max-width: 320px){
-			width: 150px;
-		}
-	}
-	ul{
-		display: flex;
-		li{
-			list-style: none;
-			a{
-				color: $secondaryColor;
-				font-size: $textMd;
-				text-decoration: none;
-				font-family: $mainFont;
-				&:hover{
+	@extend .nav;
+					&:hover{
 					color: $black;
 					text-decoration: underline;
 					cursor: pointer;
 					font-size: $textLg;
 				}
-			}
-		}
-	}
-
 }
 
 //REUTILIZANDO LO DEL CSS
@@ -69,4 +48,47 @@
 
 #color-navv{
   color: $secondaryColor;
+}
+
+.botonera{ 
+	img{	
+		width: 250px;
+}
+}
+
+
+.nav-align{
+	float: right;
+	margin-top: 30px;
+}
+
+
+//header
+.text-center{
+	text-align: center;
+}
+
+
+
+
+//ANIMACIONES DE NAV
+.nav ul li a{
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3;
+}
+
+//.nav ul li a:hover{
+//	color: black;
+//	font-weight: 600;
+//	background-size: 100% 2px;
+
+//}
+
+
+@keyframes imgAlpha{
+	from{opacity: 0.2;}
+	to{opacity: 1;}
 }

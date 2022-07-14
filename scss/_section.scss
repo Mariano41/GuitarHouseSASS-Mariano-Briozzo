@@ -14,5 +14,13 @@ section{
 .contenedor-selection{
 	display: flex;
 	justify-content: space-around;
+	text-align: -webkit-center;
 
+}
+
+.publi-info{
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+			
 }

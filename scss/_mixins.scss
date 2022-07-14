@@ -1,0 +1,50 @@
+//EXTEND
+.nav{
+	display: flex;
+	justify-content: space-between;
+	background-color: $mainColor;
+	img{
+		width: 250px;
+		@media(min-width: 280px) and (max-width: 320px){
+			width: 150px;
+			ul{
+				display: flex;
+				li{
+					list-style: none;
+					a{
+						color: $secondaryColor;
+						font-size: $textMd;
+						text-decoration: none;
+						font-family: $mainFont;
+
+}
+}
+}
+}
+}
+}
+
+
+
+
+//MIXINS
+
+@mixin texto($font-size, $line-height, $color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+	padding: 4px;
+}
+
+@mixin d-flex($justify,$align){
+	display: flex;
+	justify-content: $justify;
+	align-items:$align;
+}
+
+@mixin d-flex-column(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
