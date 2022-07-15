@@ -18,6 +18,11 @@
   font-style: normal;
   color: #ffffff; }
 
+.prod-get, .productos .produ {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap; }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -40,7 +45,7 @@
           color: #202020;
           text-decoration: underline;
           cursor: pointer;
-          font-size: 2em; }
+          font-size: 120%; }
 
 .nav {
   background-color: #383838;
@@ -182,9 +187,7 @@ body {
 
 .productos .produ {
   margin: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap; }
+  padding: 20px; }
   .productos .produ figure {
     text-align: center; }
     .productos .produ figure img {
@@ -193,7 +196,7 @@ body {
       width: 200px; }
       .productos .produ figure img:hover {
         cursor: pointer;
-        width: 300px; }
+        width: 220px; }
 
 .grid-background {
   display: grid;

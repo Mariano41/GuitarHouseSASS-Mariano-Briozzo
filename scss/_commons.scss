@@ -68,19 +68,22 @@ body{
 
 .produ{
 	margin: 20px;
-	
+
 } 
+
+
+
+
 
 
 
 
 .productos{
 	 .produ{
+	 	@extend .prod-get;
 	 	margin: 20px;
-		display: flex;
-		justify-content: space-between;
-		flex-flow: row wrap;
-	 	figure{ 
+		padding: 20px;
+	 	 	figure{ 
 	 		text-align: center;
 	 		img{
 				border-top-left-radius: 5px;
@@ -88,7 +91,7 @@ body{
 				width: 200px;
 				&:hover{
 					cursor: pointer;
-					width: 300px;
+					width: 220px;
 				}
 }
 }
