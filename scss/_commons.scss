@@ -47,6 +47,7 @@ body{
 	width: 90%;
 	margin: 20px auto;
 	padding: 20px;
+	border: 18px double black;
 	
 }
 
@@ -98,3 +99,47 @@ body{
 }
 }
 
+//bordes
+
+.productos .produ figure{
+	    background-color: darkgray;
+
+	   	font-weight: 800;
+	   	border: 3px solid darkslategrey;
+}
+
+
+
+.main-bord{
+	border-style: solid;
+	border-width: 0 thin 0 0;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+}	
+
+.filtros{
+	border-style: solid;
+	border-width: 0 thin 0 0;
+	border-bottom-style: double;
+	border-bottom-width: 10px;
+	margin: 10px;
+	margin-right: 10px;
+
+
+}	
+
+.main-bord-contactos{
+	background-color: rgba(56, 56, 56, .3);
+	padding: 10px;
+	text-align: center;
+}
+
+.map-contact{
+		padding: 10px;
+		text-align: center;
+}
+
+.nav-align{
+	float: right;
+	margin-top: 30px;
+}
