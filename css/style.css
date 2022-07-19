@@ -222,7 +222,7 @@ body {
 .main-bord-contactos {
   background-color: rgba(56, 56, 56, 0.3);
   padding: 10px;
-  text-align: center; }
+  text-align: left; }
 
 .map-contact {
   padding: 10px;
