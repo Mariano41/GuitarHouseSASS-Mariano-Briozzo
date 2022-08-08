@@ -230,9 +230,14 @@ body {
   padding: 10px;
   text-align: center; }
 
-.nav-align {
-  float: right;
-  margin-top: 30px; }
+.map-contact iframe {
+  width: 100%; }
+
+.error img {
+  width: 100%; }
+
+h6 {
+  font-size: 3rem; }
 
 .grid-background {
   display: grid;
